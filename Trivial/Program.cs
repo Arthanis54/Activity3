@@ -61,7 +61,6 @@ namespace PR01
         //Adria
         public static void Topic2()
         {
-            char correctAnswer;
             char answer;
             bool correct = false;
 
@@ -76,8 +75,11 @@ namespace PR01
                     Console.WriteLine("c) VIENA \t");
                     Console.WriteLine("d) LISBOA \t");
                     
-                    answer = Convert.ToChar
-                    
+                    answer = Convert.ToChar(Console.ReadLine());
+
+                    if (answer == 'c' || answer == 'C') Console.WriteLine("CORRECT");
+                    else Console.WriteLine("WRONG!");
+                    correct = true;
                 }
                 catch (Exception e)
                 {
@@ -85,7 +87,30 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
-            
+            correct = false;
+            while (!correct)
+            {
+                try
+                {
+                    Console.WriteLine("QUESTION 2");
+                    Console.WriteLine("IN WHICH CONTINENT CAN YOU FIND THE NILO RIVER: ");
+                    Console.WriteLine("a) AFRICA \t");
+                    Console.WriteLine("b) AUSTRALIA \t");
+                    Console.WriteLine("c) EUROPE \t");
+                    Console.WriteLine("d) SOUTH AMERICA \t");
+
+                    answer = Convert.ToChar(Console.ReadLine());
+
+                    if (answer == 'a' || answer == 'A') Console.WriteLine("CORRECT");
+                    else Console.WriteLine("WRONG!");
+                    correct = true;
+                }
+                catch (Exception e)
+                {
+                    Console.Clear();
+                    Console.WriteLine(e.Message);
+                }
+            }
         }
         //Somebody
     }
