@@ -59,7 +59,34 @@ namespace PR01
         //Marti
 
         //Adria
+        public static void Topic2()
+        {
+            char correctAnswer;
+            char answer;
+            bool correct = false;
 
+            while(!correct)
+            {
+                try
+                {
+                    Console.WriteLine("QUESTION 1");
+                    Console.WriteLine("WHAT IS THE CAPITAL OF AUSTRIA: ");
+                    Console.WriteLine("a) PALAFRUGELL \t");
+                    Console.WriteLine("b) BARCELONA \t");
+                    Console.WriteLine("c) VIENA \t");
+                    Console.WriteLine("d) LISBOA \t");
+                    
+                    answer = Convert.ToChar
+                    
+                }
+                catch (Exception e)
+                {
+                    Console.Clear();
+                    Console.WriteLine(e.Message);
+                }
+            }
+            
+        }
         //Somebody
     }
 }
