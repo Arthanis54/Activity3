@@ -57,6 +57,36 @@ namespace PR01
         }
 
         //Marti
+        public static void Topic1()
+        {
+            Console.Clear();
+
+            int answer, correct;
+            char abcd;
+            bool valid = false;
+
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("1) 35 * 12 = x");
+                    correct = 420;
+                    Console.WriteLine("a) 1293");
+                    Console.WriteLine($"b) {correct}");
+                    Console.WriteLine("c) 595");
+                    Console.WriteLine("d) 340");
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    valid = true;
+                }
+                try (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+        }
+        
 
         //Adria
 
