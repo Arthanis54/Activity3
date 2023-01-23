@@ -136,6 +136,30 @@ namespace PR01
                 }
             }
             correct = false;
+            while (!correct)
+            {
+                try
+                {
+                    Console.WriteLine("QUESTION 4");
+                    Console.WriteLine("BARCELONA IS THE CAPITAL OF: ");
+                    Console.WriteLine("a) CATALONIA \t");
+                    Console.WriteLine("b) ARGENTINA \t");
+                    Console.WriteLine("c) AUSTRALIA \t");
+                    Console.WriteLine("d) NEW ZEALAND \t");
+
+                    answer = Convert.ToChar(Console.ReadLine());
+
+                    if (answer == 'a' || answer == 'A') Console.WriteLine("CORRECT");
+                    else Console.WriteLine("WRONG!");
+                    correct = true;
+                }
+                catch (Exception e)
+                {
+                    Console.Clear();
+                    Console.WriteLine(e.Message);
+                }
+            }
+            correct = false;
         }
         //Somebody
     }
