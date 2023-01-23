@@ -61,7 +61,7 @@ namespace PR01
         {
             Console.Clear();
 
-            int answer, correct;
+            int correct;
             char abcd;
             bool valid = false;
 
@@ -70,7 +70,7 @@ namespace PR01
                 try
                 {
                     Console.WriteLine("1) 35 * 12 = x");
-                    correct = 420;
+                    correct = 35 * 12;
                     Console.WriteLine("a) 1293");
                     Console.WriteLine($"b) {correct}");
                     Console.WriteLine("c) 595");
@@ -78,9 +78,103 @@ namespace PR01
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
+                    if (IsCorrectTopic1())
+
                     valid = true;
                 }
-                try (Exception e)
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+
+            valid = false;
+
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("2) 12 * 9 = x");
+                    correct = 12 * 9;
+                    Console.WriteLine($"a) {correct}");
+                    Console.WriteLine("b) y");
+                    Console.WriteLine($"c) {5 * 12}");
+                    Console.WriteLine("d) 340");
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+
+            valid = false;
+
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("3) 11 * 9 = x");
+                    correct = 11 * 9;
+                    Console.WriteLine($"a) {correct}");
+                    Console.WriteLine("b) 300");
+                    Console.WriteLine($"c) {5 * 12}");
+                    Console.WriteLine("d) 340");
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+
+            valid = false;
+
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("4) 12 * 10 = x");
+                    correct = 12 * 9;
+                    Console.WriteLine($"a) {correct}");
+                    Console.WriteLine("b) ez");
+                    Console.WriteLine($"c) {11 * 11}");
+                    Console.WriteLine("d) 30 april 1945");
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+
+            valid = false;
+
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("5) x * 9 = 90");
+                    correct = 9 / 90;
+                    Console.WriteLine($"a) {correct}");
+                    Console.WriteLine("b) 5");
+                    Console.WriteLine($"c) 90");
+                    Console.WriteLine("d) 10.1");
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    valid = true;
+                }
+                catch (Exception e)
                 {
                     Console.WriteLine(e.Message);
                 }
