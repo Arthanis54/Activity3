@@ -111,6 +111,31 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            correct = false;
+            while (!correct)
+            {
+                try
+                {
+                    Console.WriteLine("QUESTION 3");
+                    Console.WriteLine("WHERE DOES THE PRESIDENT OF THE USA LIVE? ");
+                    Console.WriteLine("a) BROOKLYN \t");
+                    Console.WriteLine("b) WASHINGTON \t");
+                    Console.WriteLine("c) PALERMO \t");
+                    Console.WriteLine("d) LAPONIA \t");
+
+                    answer = Convert.ToChar(Console.ReadLine());
+
+                    if (answer == 'b' || answer == 'B') Console.WriteLine("CORRECT");
+                    else Console.WriteLine("WRONG!");
+                    correct = true;
+                }
+                catch (Exception e)
+                {
+                    Console.Clear();
+                    Console.WriteLine(e.Message);
+                }
+            }
+            correct = false;
         }
         //Somebody
     }
