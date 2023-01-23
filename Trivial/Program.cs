@@ -160,6 +160,29 @@ namespace PR01
                 }
             }
             correct = false;
+            while (!correct)
+            {
+                try
+                {
+                    Console.WriteLine("QUESTION 5");
+                    Console.WriteLine("IN WHICH COUNTRY CAN YOU FIND THE CONGO RIVER?");
+                    Console.WriteLine("a) SOMALIA \t");
+                    Console.WriteLine("b) CONGO \t");
+                    Console.WriteLine("c) FRANCE \t");
+                    Console.WriteLine("d) JAPAN \t");
+
+                    answer = Convert.ToChar(Console.ReadLine());
+
+                    if (answer == 'b' || answer == 'B') Console.WriteLine("CORRECT");
+                    else Console.WriteLine("WRONG!");
+                    correct = true;
+                }
+                catch (Exception e)
+                {
+                    Console.Clear();
+                    Console.WriteLine(e.Message);
+                }
+            }
         }
         //Somebody
     }
