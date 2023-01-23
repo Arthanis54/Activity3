@@ -20,13 +20,13 @@ namespace PR01
                 switch (tecla.Key)
                 {
                     case ConsoleKey.D1:
-                        Topic1();
+                        //Topic1();
                         break;
                     case ConsoleKey.D2:
                         Topic2();
                         break;
                     case ConsoleKey.D3:
-                        Topic3();
+                        //Topic3();
                         break;
                     case ConsoleKey.D0:
                         MsgNextScreen("PRESS ANY KEY 2 EXIT");
@@ -76,8 +76,10 @@ namespace PR01
                     Console.WriteLine("d) LISBOA \t");
                     
                     answer = Convert.ToChar(Console.ReadLine());
+                    answer = Char.ToUpper(answer);
 
-                    if (answer == 'c' || answer == 'C') Console.WriteLine("CORRECT");
+                    if (answer < 'A' || answer > 'Z') throw new Exception("Wrong input, try again");
+                    else if (answer == 'C') Console.WriteLine("CORRECT");
                     else Console.WriteLine("WRONG!");
                     correct = true;
                 }
@@ -100,8 +102,10 @@ namespace PR01
                     Console.WriteLine("d) SOUTH AMERICA \t");
 
                     answer = Convert.ToChar(Console.ReadLine());
+                    answer = Char.ToUpper(answer);
 
-                    if (answer == 'a' || answer == 'A') Console.WriteLine("CORRECT");
+                    if (answer < 'A' || answer > 'Z') throw new Exception("Wrong input, try again");
+                    else if (answer == 'A') Console.WriteLine("CORRECT");
                     else Console.WriteLine("WRONG!");
                     correct = true;
                 }
@@ -124,8 +128,10 @@ namespace PR01
                     Console.WriteLine("d) LAPONIA \t");
 
                     answer = Convert.ToChar(Console.ReadLine());
+                    answer = Char.ToUpper(answer);
 
-                    if (answer == 'b' || answer == 'B') Console.WriteLine("CORRECT");
+                    if (answer < 'A' || answer > 'Z') throw new Exception("Wrong input, try again");
+                    else if (answer == 'B') Console.WriteLine("CORRECT");
                     else Console.WriteLine("WRONG!");
                     correct = true;
                 }
@@ -148,8 +154,10 @@ namespace PR01
                     Console.WriteLine("d) NEW ZEALAND \t");
 
                     answer = Convert.ToChar(Console.ReadLine());
+                    answer = Char.ToUpper(answer);
 
-                    if (answer == 'a' || answer == 'A') Console.WriteLine("CORRECT");
+                    if (answer < 'A' || answer > 'Z') throw new Exception("Wrong input, try again");
+                    else if (answer == 'A') Console.WriteLine("CORRECT");
                     else Console.WriteLine("WRONG!");
                     correct = true;
                 }
@@ -172,8 +180,10 @@ namespace PR01
                     Console.WriteLine("d) JAPAN \t");
 
                     answer = Convert.ToChar(Console.ReadLine());
+                    answer = Char.ToUpper(answer);
 
-                    if (answer == 'b' || answer == 'B') Console.WriteLine("CORRECT");
+                    if (answer < 'A' || answer > 'Z') throw new Exception("Wrong input, try again");
+                    else if (answer == 'B') Console.WriteLine("CORRECT");
                     else Console.WriteLine("WRONG!");
                     correct = true;
                 }
@@ -183,6 +193,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
         }
         //Somebody
     }
