@@ -28,6 +28,15 @@ namespace PR01
                     case ConsoleKey.D3:
                         Topic3();
                         break;
+                    case ConsoleKey.D3:
+                        Topic4();
+                        break;
+                    case ConsoleKey.D3:
+                        Topic5();
+                        break;
+                    case ConsoleKey.D3:
+                        Topic6();
+                        break;
                     case ConsoleKey.D0:
                         MsgNextScreen("PRESS ANY KEY 2 EXIT");
                         break;
@@ -57,6 +66,7 @@ namespace PR01
         }
 
         //Marti
+
 
         //Adria
 
