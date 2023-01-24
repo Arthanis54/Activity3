@@ -97,6 +97,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            valid = false;
             Console.Clear();
             while (!valid)
             {
@@ -121,6 +122,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            valid = false;
             Console.Clear();
             while (!valid)
             {
@@ -145,6 +147,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            valid = false;
             Console.Clear();
             while (!valid)
             {
@@ -169,6 +172,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            valid = false;
             Console.Clear();
             while (!valid)
             {
@@ -225,6 +229,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            valid = false;
             Console.Clear();
             while (!valid)
             {
@@ -249,6 +254,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            valid = false;
             Console.Clear();
             while (!valid)
             {
@@ -273,6 +279,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            valid = false;
             Console.Clear();
             while (!valid)
             {
@@ -297,6 +304,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            valid = false;
             Console.Clear();
             while (!valid)
             {
@@ -321,12 +329,137 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
-            Console.Clear();
         }
         //FOOD
         public static string Topic6() 
         {
 
+            Console.Clear();
+
+            char abcd, correct;
+            bool valid = false;
+
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("1- WITCH OF THE NEXT DISHES IS FORM ITALY?");
+                    Console.WriteLine("a) PIZZA");
+                    Console.WriteLine("b) TORTILLA DE PATATAS");
+                    Console.WriteLine("c) FISH AND CHIPS");
+                    Console.WriteLine("d) RAMEN");
+                    correct = 'a';
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    if (IsCorrectTopic(abcd, correct)) Console.WriteLine("CORRECT!! GOOD JOB");
+                    else Console.WriteLine("WRONG!! NICE TRY");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            valid = false;
+            Console.Clear();
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("2- WHICH IS NOT AN INGREDIENT FOR A CARBONARA");
+                    Console.WriteLine("a) PASTA");
+                    Console.WriteLine("b) BACON");
+                    Console.WriteLine("c) CHEESE");
+                    Console.WriteLine("d) GUANCHALE");
+                    correct = 'b';
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    if (IsCorrectTopic(abcd, correct)) Console.WriteLine("CORRECT!! GOOD JOB");
+                    else Console.WriteLine("WRONG!! NICE TRY");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            valid = false;
+            Console.Clear();
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("3- WHICH IS NOT AN INGREDIENT FOR A PIZZA");
+                    Console.WriteLine("a) TOMATO");
+                    Console.WriteLine("b) CHEESE");
+                    Console.WriteLine("c) THERE IS NO BAD INGREDIENTS");
+                    Console.WriteLine("d) -->PINEAPLLE<--");
+                    correct = 'd';
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    if (IsCorrectTopic(abcd, correct)) Console.WriteLine("CORRECT!! GOOD JOB");
+                    else Console.WriteLine("WRONG!! NICE TRY");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            valid = false;
+            Console.Clear();
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("4- WITCH IS NOT A FRUIT");
+                    Console.WriteLine("a) POTATOE");
+                    Console.WriteLine("b) MANDARIN");
+                    Console.WriteLine("c) MANGO");
+                    Console.WriteLine("d) APPLE");
+                    correct = 'a';
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    if (IsCorrectTopic(abcd, correct)) Console.WriteLine("CORRECT!! GOOD JOB");
+                    else Console.WriteLine("WRONG!! NICE TRY");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            valid = false;
+            Console.Clear();
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("5- WHY IS YOUR GRANDMA THE BEST CHEF?");
+                    Console.WriteLine("a) YES");
+                    Console.WriteLine("b) BECAUSE SHE'S THE BEST");
+                    Console.WriteLine("c) DELICIOUS");
+                    Console.WriteLine("d) BECAUSE OF ME");
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    Console.WriteLine("ALL ARE CORRECT");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
         }
         public static bool IsCorrectTopic(char abcd, char correct)
         {
