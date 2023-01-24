@@ -97,6 +97,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            Console.Clear();
             while (!valid)
             {
                 try
@@ -120,6 +121,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            Console.Clear();
             while (!valid)
             {
                 try
@@ -143,6 +145,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            Console.Clear();
             while (!valid)
             {
                 try
@@ -166,6 +169,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            Console.Clear();
             while (!valid)
             {
                 try
@@ -193,7 +197,131 @@ namespace PR01
         //SERIES AND MOVIES
         public static string Topic5() 
         {
-            
+            Console.Clear();
+
+            char abcd, correct;
+            bool valid = false;
+
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("1- FROM WHICH MOVIES IS DARTH VADER FROM?");
+                    Console.WriteLine("a) STAR WARS");
+                    Console.WriteLine("b) STAR TREK");
+                    Console.WriteLine("c) TOY STORY");
+                    Console.WriteLine("d) JURASIC PARK");
+                    correct = 'a';
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    if (IsCorrectTopic(abcd, correct)) Console.WriteLine("CORRECT!! GOOD JOB");
+                    else Console.WriteLine("WRONG!! NICE TRY");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            Console.Clear();
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("2- FROM WHICH MOVIE IS SPOK FROM?");
+                    Console.WriteLine("a) STAR WARS");
+                    Console.WriteLine("b) ALIEN");
+                    Console.WriteLine("c) STAR TREK");
+                    Console.WriteLine("d) PREDATOR");
+                    correct = 'c';
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    if (IsCorrectTopic(abcd, correct)) Console.WriteLine("CORRECT!! GOOD JOB");
+                    else Console.WriteLine("WRONG!! NICE TRY");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            Console.Clear();
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("3- FROM WHICH SERIE IS HOMER SIMPSON FROM?");
+                    Console.WriteLine("a) FAMILY GUY");
+                    Console.WriteLine("b) FUTURAMA");
+                    Console.WriteLine("c) THE SIMPSONS");
+                    Console.WriteLine("d) THE OFFICE");
+                    correct = 'c';
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    if (IsCorrectTopic(abcd, correct)) Console.WriteLine("CORRECT!! GOOD JOB");
+                    else Console.WriteLine("WRONG!! NICE TRY");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            Console.Clear();
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("4- FROM WHICH MOVIES IS PETER GRIFFIN FROM?");
+                    Console.WriteLine("a) THE SIMPSONS");
+                    Console.WriteLine("b) FAMILY GUY");
+                    Console.WriteLine("c) FRIENDS");
+                    Console.WriteLine("d) BRAKING BAD");
+                    correct = 'b';
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    if (IsCorrectTopic(abcd, correct)) Console.WriteLine("CORRECT!! GOOD JOB");
+                    else Console.WriteLine("WRONG!! NICE TRY");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            Console.Clear();
+            while (!valid)
+            {
+                try
+                {
+                    Console.WriteLine("5- IN WICH OF THE NEXT SERIES DRAGONS APPEAR?");
+                    Console.WriteLine("a) EL CID");
+                    Console.WriteLine("b) GARFIELD");
+                    Console.WriteLine("c) THE OFFICE");
+                    Console.WriteLine("d) GAMO OF THRONES");
+                    correct = 'd';
+
+                    if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
+
+                    if (IsCorrectTopic(abcd, correct)) Console.WriteLine("CORRECT!! GOOD JOB");
+                    else Console.WriteLine("WRONG!! NICE TRY");
+
+                    valid = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            Console.Clear();
         }
         //FOOD
         public static string Topic6() 
