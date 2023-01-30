@@ -87,6 +87,7 @@ namespace PR01
                     Console.WriteLine("c) 1910");
                     Console.WriteLine("d) 1890");
                     correct = 'c';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -112,6 +113,7 @@ namespace PR01
                     Console.WriteLine("c) OBAMA");
                     Console.WriteLine("d) TRUMP");
                     correct = 'b';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -137,6 +139,7 @@ namespace PR01
                     Console.WriteLine("c) ITALY");
                     Console.WriteLine("d) FRANCE");
                     correct = 'd';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -162,6 +165,7 @@ namespace PR01
                     Console.WriteLine("c) MADRID");
                     Console.WriteLine("d) NOVA YORK");
                     correct = 'a';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -187,6 +191,7 @@ namespace PR01
                     Console.WriteLine("c) 1900");
                     Console.WriteLine("d) 1970");
                     correct = 'b';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -220,6 +225,7 @@ namespace PR01
                     Console.WriteLine("c) TOY STORY");
                     Console.WriteLine("d) JURASIC PARK");
                     correct = 'a';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -245,6 +251,7 @@ namespace PR01
                     Console.WriteLine("c) STAR TREK");
                     Console.WriteLine("d) PREDATOR");
                     correct = 'c';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -270,6 +277,7 @@ namespace PR01
                     Console.WriteLine("c) THE SIMPSONS");
                     Console.WriteLine("d) THE OFFICE");
                     correct = 'c';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -295,6 +303,7 @@ namespace PR01
                     Console.WriteLine("c) FRIENDS");
                     Console.WriteLine("d) BRAKING BAD");
                     correct = 'b';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -320,6 +329,7 @@ namespace PR01
                     Console.WriteLine("c) THE OFFICE");
                     Console.WriteLine("d) GAMO OF THRONES");
                     correct = 'd';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -354,6 +364,7 @@ namespace PR01
                     Console.WriteLine("c) FISH AND CHIPS");
                     Console.WriteLine("d) RAMEN");
                     correct = 'a';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -379,6 +390,7 @@ namespace PR01
                     Console.WriteLine("c) CHEESE");
                     Console.WriteLine("d) GUANCHALE");
                     correct = 'b';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -404,6 +416,7 @@ namespace PR01
                     Console.WriteLine("c) THERE IS NO BAD INGREDIENTS");
                     Console.WriteLine("d) -->PINEAPLLE<--");
                     correct = 'd';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -429,6 +442,7 @@ namespace PR01
                     Console.WriteLine("c) MANGO");
                     Console.WriteLine("d) APPLE");
                     correct = 'a';
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
@@ -453,6 +467,8 @@ namespace PR01
                     Console.WriteLine("b) BECAUSE SHE'S THE BEST");
                     Console.WriteLine("c) DELICIOUS");
                     Console.WriteLine("d) BECAUSE OF ME");
+
+                    abcd = Convert.ToChar(Console.ReadLine());
 
                     if (abcd != 'a' && abcd != 'b' && abcd != 'c' && abcd != 'd') throw new Exception("ENTER ONE THE OPTIONS");
 
