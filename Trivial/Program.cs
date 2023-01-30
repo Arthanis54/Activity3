@@ -28,13 +28,13 @@ namespace PR01
                     case ConsoleKey.D3:
                         Topic3();
                         break;
-                    case ConsoleKey.D3:
+                    case ConsoleKey.D4:
                         Topic4();
                         break;
-                    case ConsoleKey.D3:
+                    case ConsoleKey.D5:
                         Topic5();
                         break;
-                    case ConsoleKey.D3:
+                    case ConsoleKey.D6:
                         Topic6();
                         break;
                     case ConsoleKey.D0:
@@ -62,6 +62,9 @@ namespace PR01
             Console.WriteLine("1 - MATHS TOPIC");
             Console.WriteLine("2 - GEOGRAPHY");
             Console.WriteLine("3 - ART");
+            Console.WriteLine("4 - HISTORY");
+            Console.WriteLine("5 - SERIES AND MOVIES");
+            Console.WriteLine("6 - FOOD");
             Console.WriteLine("0 - PRESS ANY KEY 2 EXIT");
         }
 
@@ -197,6 +200,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
         }
         //SERIES AND MOVIES
         public static string Topic5() 
@@ -329,6 +333,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
         }
         //FOOD
         public static string Topic6() 
@@ -460,6 +465,7 @@ namespace PR01
                     Console.WriteLine(e.Message);
                 }
             }
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
         }
         public static bool IsCorrectTopic(char abcd, char correct)
         {
