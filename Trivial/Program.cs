@@ -70,11 +70,11 @@ namespace PR01
 
         //Marti
         //HISTORY 
-        public static string Topic4() 
+        public static void Topic4() 
         {
             Console.Clear();
 
-            char abcd, correct;
+            char abcd = ' ', correct;
             bool valid = false;
 
             while (!valid)
@@ -203,11 +203,11 @@ namespace PR01
             MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
         }
         //SERIES AND MOVIES
-        public static string Topic5() 
+        public static void Topic5() 
         {
             Console.Clear();
 
-            char abcd, correct;
+            char abcd = ' ', correct;
             bool valid = false;
 
             while (!valid)
@@ -336,12 +336,12 @@ namespace PR01
             MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
         }
         //FOOD
-        public static string Topic6() 
+        public static void Topic6() 
         {
 
             Console.Clear();
 
-            char abcd, correct;
+            char abcd = ' ', correct;
             bool valid = false;
 
             while (!valid)
